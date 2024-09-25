@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "basic_langchain"
+version = "0.1.0"
+description = "FastAPI backend using LangChain with Python 3.12"
+authors = ["Suhee Kang <comeevery@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.103.0"
+uvicorn = "^0.23.1"
+openai = "^0.27.2"
+langchain = "^0.0.305"
+pydantic = "^2.2.1"
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "uvicorn main:app --host 0.0.0.0 --port 8000"
