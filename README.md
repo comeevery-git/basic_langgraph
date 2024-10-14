@@ -9,12 +9,24 @@ LLM Application with langchain
 ### Directory Structure
 ```
 basic_langchain/
+├── chain/
+│   ├── retrieval/
+│   │   └── base.py
+│   └── pdf_retrieval_chain.py
+├── common/
+│   └── utils/
+│       └── utils.py
+├── resources/
+├── test/
+│   └── test_chat.py
 ├── .env
+├── .env_sample
 ├── Dockerfile
 ├── README.md
 ├── main.py
 ├── poetry.lock
-└── pyproject.toml
+├── pyproject.toml
+└── __pycache__/
 ```
 
 ### Run (Poetry)
